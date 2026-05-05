@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cute Surprise</title>
+
+<style>
+body {
+    margin: 0;
+    background: rgb(186, 200, 144);
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial;
+}
+
+
+#btn {
+    margin-top: 200px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(236, 172, 98);
+    color: white;
+    cursor: pointer;
+}
+
+
+#msg {
+    display: none;
+    font-size: 20px;
+    color: black;
+    margin-top: 150px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<button id="btn" onclick="start()">hiii click on me 💖</button>
+
+<div id="msg"> "hiii juii its been 2 yr we are frds technically 4 including 11th 12th where you thght i was a mean girl you held me every single time jevha kevha maza downfall hota for eg ramshedje trek you held my hand ig that was the first tym you dont have any prbl w my physical touch hahahha funny naa i never thght ki a girl from my coaching class jichya sobt me kdhi tri bolaychi now she is the most important person in my lyf i still remember i once asked you ki "jui do you have a bf ???" and you were like "nhii jevha banvel tula phile sangel " who thght apn clg mdhe sobt rahu and will make more memories (memories chya nava khali clg bunk krun golden la jane)but ya this is also a memeory i love when you say "YOU NEVER KNOWN" like damn bro khi hi hi zale ka you never known but yaa im so so so grateful to have you in my lyf and by my side alwayss giving me reality cehcks which are v needed no offense <br>
+    you deserve whole world juii like WHOLE WORLD tuzya sarkhi frd aayusht asne he sobaghya a I MEAN IT .lets makes more memories and make our clg lyf and frdship unforgettable not just by going to golend cafe or staying home. iloveyou and thankyou for being there for me alaways💕”
+<br>
+Happy birthdayyy Juii </div>
+
+
+<script>
+function start() {
+    document.getElementById("msg").style.display = "block";
+    document.getElementById("btn").style.display = "none";
+
+    setInterval(function() {
+        var h = document.createElement("div");
+        h.className = "heart";
+        h.style.left = Math.random() * window.innerWidth + "px";
+        document.body.appendChild(h);
+
+        setTimeout(function() {
+            h.remove();
+        }, 5000);
+    }, 300);
+}
+</script>
+
+</body>
+</html>
